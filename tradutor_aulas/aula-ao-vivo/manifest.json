@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Meet ES → PT-BR Captions",
+  "version": "1.6.0",
+  "description": "Traduz as legendas do Google Meet de espanhol para português do Brasil, em tempo quase real, 100% no navegador (Translator API do Chrome).",
+  "minimum_chrome_version": "138",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"],
+      "css": ["overlay.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

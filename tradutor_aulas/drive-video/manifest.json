@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Drive Vídeo ES → PT-BR Captions",
+  "version": "1.1.0",
+  "description": "Traduz as legendas de vídeos do Google Drive de espanhol para português do Brasil, sincronizadas com o vídeo, 100% no navegador (Translator API do Chrome).",
+  "minimum_chrome_version": "138",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://drive.google.com/*",
+        "https://youtube.googleapis.com/*",
+        "https://drive.usercontent.google.com/*"
+      ],
+      "js": ["hook.js"],
+      "world": "MAIN",
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://drive.google.com/*",
+        "https://youtube.googleapis.com/*",
+        "https://drive.usercontent.google.com/*"
+      ],
+      "js": ["captions.js", "content.js"],
+      "css": ["overlay.css"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}

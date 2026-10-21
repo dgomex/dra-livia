@@ -1,0 +1,6 @@
+# Glossário espanhol = português (opcional).
+# 1) Ajuda o Whisper a reconhecer termos técnicos (lado esquerdo vira dica de transcrição).
+# 2) Os tradutores usam sempre a tradução do lado direito (consistência entre lotes).
+# Uma entrada por linha. Linhas com '#' são comentários. Exemplos:
+# embarazo = gravidez
+# ecografía = ultrassom
