@@ -1,0 +1,5 @@
+# Execuções da skill responder-email: anexos, rascunhos e style packs com dados de clientes
+email-runs/
+.env
+.DS_Store
+__pycache__/
